@@ -16,7 +16,7 @@ public class SingeltonLibrary {
 }
 
 
-//Multithreading leaning
+//Multithreading.Multithreading leaning
 //using Library.class as Lock this will all static methods + all methods who uses Library.class as lock
 class Library {
     private static Library instance;
@@ -50,6 +50,9 @@ class Library {
 
     public String getLibraryName(){
         return libraryName;
+    }
+
+    public void addBook(Book book1) {
     }
 }
 

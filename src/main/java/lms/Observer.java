@@ -28,9 +28,9 @@ class LibraryNotifier{
     public void addObserver(Observer observer){
         observersList.add(observer);
     }
-    public void notifyObserver(){
+    public void notifyObservers(String message){
         for (Observer observer: observersList) {
-            observer.update("notify by notifier");
+            observer.update("notify by notifier "+ message);
         }
     }
 }
